@@ -25,7 +25,7 @@ class StockFactory extends Factory
     public function definition()
     {
         return [
-            'name' => $this->faker->name(),
+            'name' => $this->faker->lexify(),
             'value' => $this->faker->randomFloat(2)
         ];
     }
