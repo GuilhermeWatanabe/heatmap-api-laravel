@@ -22,4 +22,7 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 
 Route::prefix('stocks')->controller(StockController::class)->group(function () {
     Route::get('', 'index');
+    Route::post('', 'store');
+    Route::patch('{id}', 'update');
+    Route::delete('{id}', 'destroy');
 });
