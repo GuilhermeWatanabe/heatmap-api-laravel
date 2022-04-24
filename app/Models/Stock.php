@@ -14,5 +14,5 @@ class Stock extends Model
      *
      * @var array
      */
-    protected $fillable = ['name', 'value'];
+    protected $fillable = ['name', 'value', 'volume'];
 }

@@ -26,7 +26,8 @@ class StockFactory extends Factory
     {
         return [
             'name' => $this->faker->lexify(),
-            'value' => $this->faker->randomFloat(2, -15, 15)
+            'value' => $this->faker->randomFloat(2, -15, 15),
+            'volume' => $this->faker->randomNumber()
         ];
     }
 }
